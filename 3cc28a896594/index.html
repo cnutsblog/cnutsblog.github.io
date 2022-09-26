@@ -100,7 +100,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Matrix%E8%B4%A6%E5%8F%B7"><span class="nav-number">1.1.</span> <span class="nav-text">Matrix账号</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Homeserver"><span class="nav-number">1.1.</span> <span class="nav-text">Homeserver</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Matrix%E8%B4%A6%E5%8F%B7"><span class="nav-number">1.2.</span> <span class="nav-text">Matrix账号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#F-Droid"><span class="nav-number">1.3.</span> <span class="nav-text">F-Droid</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text"></span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -184,7 +184,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-09-26 09:44:30 / 修改时间：11:04:19" itemprop="dateCreated datePublished" datetime="2022-09-26T09:44:30+08:00">2022-09-26</time>
+      <time title="创建时间：2022-09-26 09:44:30 / 修改时间：19:33:17" itemprop="dateCreated datePublished" datetime="2022-09-26T09:44:30+08:00">2022-09-26</time>
     </span>
 
   
@@ -198,10 +198,23 @@
     
     <div class="post-body" itemprop="articleBody">
         <p>　　<a target="_blank" rel="noopener" href="https://schildi.chat/">SchildiChat</a>是知名Matrix客户端<a target="_blank" rel="noopener" href="https://element.io/">Element</a>的衍生版本。虽然图标和UI比Element丑陋，却拥有比Element更加简便的登录方式和功能。SchildiChat和Element一样有多个平台的客户端以及网页端。这篇文章将教会你从注册到使用快速上手SchildiChat。</p>
-<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="Matrix账号"><a href="#Matrix账号" class="headerlink" title="Matrix账号"></a>Matrix账号</h2><p>　　(能够正常访问<a target="_blank" rel="noopener" href="https://google.com/">Google</a>和<a target="_blank" rel="noopener" href="https://matrix.org/">Matrix.org</a>的读者可以跳过该步骤，直接使用Schildi自带的注册功能)</p>
-<p>　　由于Element&#x2F;Schildi注册时使用的</p>
-<p>　　</p>
-
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="Homeserver"><a href="#Homeserver" class="headerlink" title="Homeserver"></a>Homeserver</h2><p>(能够正常访问<a target="_blank" rel="noopener" href="https://matrix.org/">Matrix.org</a>且不考虑网速的读者可以跳过该步骤)</p>
+<p>　　众所周知，Matrix是一个协议，服务的供应商取决于注册账号时填写的homeserver。一般情况下大家会选择matrix.org作为homeserver。由于部分地区并没有能力直接访问matrix.org，且Matrix组织也呼吁不要把账号都放在同一个供应商里，因此你需要一个便于自己访问的homeserver并注册账号。</p>
+<p>　　<a target="_blank" rel="noopener" href="https://joinmatrix.org/servers">joinmatrix.org</a>和<a target="_blank" rel="noopener" href="https://wiki.asra.gr/en:public_servers">asra.gr’s list</a>列出了开放注册的homeserver。建议先挑选一个地理位置离自己较近的，然后在<a target="_blank" rel="noopener" href="https://www.itdog.cn/tcping/">ITDOG</a>输入homeserver域名观察所在地服务器访问homeserver的延迟(&lt;&#x3D;200ms的线路比较顺畅)。如果捉摸不定，这里也有一个清单可供参考。</p>
+<ul>
+<li><p>居住地在亚太、美洲: 🇯🇵comm.cx 🇺🇸mozilla.org 🇺🇸community.rs</p>
+</li>
+<li><p>居住地在中西亚、欧洲、非洲: 🇷🇺sibnsk.net 🇩🇪envs.net 🇩🇪yatrix.org</p>
+</li>
+</ul>
+<p>　　如果能够<a target="_blank" rel="noopener" href="https://matrix-org.github.io/synapse">自行搭建homeserver</a>是最好的，使用质量和数据安全都能够得到保证。</p>
+<h2 id="Matrix账号"><a href="#Matrix账号" class="headerlink" title="Matrix账号"></a>Matrix账号</h2><p>(能够正常访问<a target="_blank" rel="noopener" href="https://google.com/">Google</a>的读者可以跳过该步骤，直接使用Schildi注册账号)</p>
+<p>　　部分homeserver在注册时会弹出reCaptha验证，由于Element&#x2F;Schildi转发reCaptha页面会出错，导致不能正常访问Google的用户也无法在Schildi通过reCaptha验证。</p>
+<p>　　<a target="_blank" rel="noopener" href="https://fluffychat.im/">FluffyChat</a>会通过浏览器打开homeserver提供的reCaptha，不会出现错误。因此我们可以通过FluffyChat的网页端注册一个账号，再通过SchildiChat登录。如果reCaptha仍无法加载，再通过Schildi注册也无妨。</p>
+<p>　　打开<a target="_blank" rel="noopener" href="https://fluffychat.im/web/#/home">FluffyChat的网页端</a>(或<a href="%5Bhttps://fluffychat.im%5D(https://fluffychat.im)">通过官网下载客户端</a>)，将homeserver一栏(默认是matrix.org)替换成你选好的homeserver的域名。点击”Connect”，填写用户名注册。</p>
+<p>　　注册成功后你会得到一个MXID，格式为@username:homeserver.domain。可以无阻碍地登录Schildi了🎉。</p>
+<h2 id="F-Droid"><a href="#F-Droid" class="headerlink" title="F-Droid"></a>F-Droid</h2><p>　　</p>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1>
     </div>
 
     
