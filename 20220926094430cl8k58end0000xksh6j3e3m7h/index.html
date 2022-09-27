@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"mtxzhinan.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+
+
+<link rel="canonical" href="https://mtxzhinan.github.io/20220926094430cl8k58end0000xksh6j3e3m7h/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://mtxzhinan.github.io/20220926094430cl8k58end0000xksh6j3e3m7h/","path":"20220926094430cl8k58end0000xksh6j3e3m7h/","title":"SchildiChat使用指南"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>SchildiChat使用指南 | Matrix使用指南</title>
+  
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Matrix使用指南</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Homeserver"><span class="nav-number">1.1.</span> <span class="nav-text">Homeserver</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Matrix%E8%B4%A6%E5%8F%B7"><span class="nav-number">1.2.</span> <span class="nav-text">Matrix账号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#F-Droid%E5%BA%94%E7%94%A8%E7%AE%A1%E7%90%86%E5%99%A8"><span class="nav-number">1.3.</span> <span class="nav-text">F-Droid应用管理器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8A%E6%89%8B"><span class="nav-number">2.</span> <span class="nav-text">上手</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E5%8D%93"><span class="nav-number">2.1.</span> <span class="nav-text">安卓</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD"><span class="nav-number">2.1.1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%99%BB%E5%BD%95"><span class="nav-number">2.1.2.</span> <span class="nav-text">登录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE"><span class="nav-number">2.1.3.</span> <span class="nav-text">配置</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">MtxZhinan</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mtxzhinan.github.io/20220926094430cl8k58end0000xksh6j3e3m7h/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="MtxZhinan">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Matrix使用指南">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="SchildiChat使用指南 | Matrix使用指南">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          SchildiChat使用指南
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-09-26 09:44:30" itemprop="dateCreated datePublished" datetime="2022-09-26T09:44:30+08:00">2022-09-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-09-27 11:21:28" itemprop="dateModified" datetime="2022-09-27T11:21:28+08:00">2022-09-27</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>　　iOS用户和想要粗略了解Matrix的用户请阅读<a href="https://mtxzhinan.github.io/3d1c6a00f08c/">Matrix客户端使用指南</a>。</p>
+<p>　　<a target="_blank" rel="noopener" href="https://schildi.chat/">SchildiChat</a>是知名Matrix客户端<a target="_blank" rel="noopener" href="https://element.io/">Element</a>的衍生版本。虽然图标和UI比Element丑陋，却拥有比Element更加简便的登录方式和功能。SchildiChat和Element一样有多个平台的客户端以及网页端(SchildiChat暂时没有iOS端🥺)。这篇文章将教会你从注册到使用快速上手SchildiChat。</p>
+<span id="more"></span>
+
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="Homeserver"><a href="#Homeserver" class="headerlink" title="Homeserver"></a>Homeserver</h2><p>(能够正常访问<a target="_blank" rel="noopener" href="https://matrix.org/">Matrix.org</a>且不考虑访问速度的同学可以跳过该步骤)</p>
+<p>　　众所周知，Matrix是一个协议，服务的供应商取决于注册账号时填写的homeserver。一般情况下大家会选择matrix.org作为homeserver。由于部分地区并没有能力直接访问matrix.org，且Matrix组织也呼吁不要把账号都放在同一个供应商里，因此你需要找到一个便于自己访问的homeserver并在上面注册账号。</p>
+<p>　　<a target="_blank" rel="noopener" href="https://joinmatrix.org/servers">joinmatrix.org</a>和<a target="_blank" rel="noopener" href="https://wiki.asra.gr/en:public_servers">asra.gr’s list</a>列出了开放注册的homeserver。建议先挑选一个地理位置离自己较近的，然后在<a target="_blank" rel="noopener" href="https://www.itdog.cn/tcping/">ITDOG</a>输入homeserver域名并观察居住地服务器访问该域名的延迟(&lt;&#x3D;200ms的线路比较顺畅)。如果捉摸不定，这里也有一个清单可供参考。</p>
+<ul>
+<li><p>居住地在亚太、美洲: 🇯🇵comm.cx 🇺🇸mozilla.org 🇺🇸community.rs</p>
+</li>
+<li><p>居住地在中西亚、欧洲、非洲: 🇷🇺sibnsk.net 🇩🇪envs.net 🇩🇪yatrix.org</p>
+</li>
+</ul>
+<p>　　如果能够<a target="_blank" rel="noopener" href="https://matrix-org.github.io/synapse">自行搭建homeserver</a>是最好的，使用质量和数据安全都能够得到保证。</p>
+<h2 id="Matrix账号"><a href="#Matrix账号" class="headerlink" title="Matrix账号"></a>Matrix账号</h2><p>(能够正常访问<a target="_blank" rel="noopener" href="https://google.com/">Google</a>的同学可以跳过该步骤，直接使用Schildi注册账号)</p>
+<p>　　部分homeserver在注册时会弹出reCaptha验证，由于Element&#x2F;Schildi转发reCaptha页面会出错，导致不能正常访问Google的用户也无法在Schildi通过reCaptha验证。</p>
+<p>　　<a target="_blank" rel="noopener" href="https://fluffychat.im/">FluffyChat</a>会通过浏览器打开homeserver提供的reCaptha，不会出现错误。因此我们可以通过FluffyChat的网页端注册一个账号，再通过SchildiChat登录。如果reCaptha仍无法加载，再通过Schildi注册也无妨。</p>
+<p>　　打开<a target="_blank" rel="noopener" href="https://fluffychat.im/web/#/home">FluffyChat的网页端</a>(或<a href="%5Bhttps://fluffychat.im%5D(https://fluffychat.im)">通过官网下载客户端</a>)，将homeserver一栏(默认是matrix.org)替换成你选好的homeserver的域名。点击”Connect”，填写用户名注册。</p>
+<p>　　注册成功后你会得到一个MXID，记格式为@username:homeserver.domain，username是注册时填写的用户名，homeserver.domain是你的账号所在homeserver的域名。记牢MXID和密码就可以无阻碍地登录Schildi了🎉。</p>
+<h2 id="F-Droid应用管理器"><a href="#F-Droid应用管理器" class="headerlink" title="F-Droid应用管理器"></a>F-Droid应用管理器</h2><p>(没有打算在安卓&#x2F;鸿蒙设备使用SchildiChat的同学请忽略该步骤)</p>
+<p>　　<a target="_blank" rel="noopener" href="https://f-droid.org/about/">F-Droid</a>是安卓平台的一款功能强大的开源软件管理器。可以通过添加各种软件仓库来实现快速下载和更新各类软件。F-Droid将用于更新Schildi和消息推送器ntfy。</p>
+<p>　　从<a target="_blank" rel="noopener" href="https://f-droid.org/zh_Hans/packages/org.fdroid.fdroid/">官网</a>下载apk安装F-Droid，更改官方仓库的镜像地址以加快更新速度(例如<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/fdroid/repo/?fingerprint=43238D512C1E5EB2D6569F4A3AFBF5523418B82E0A3ED1552770ABB9A9C9CCAB">TUNA</a>)并关闭其他的下载源。之后你就可以定期更新SchildiChat了。</p>
+<p>　　看不懂也没关系，<a target="_blank" rel="noopener" href="https://sspai.com/post/63647">这里有更详细的教程</a>。</p>
+<h1 id="上手"><a href="#上手" class="headerlink" title="上手"></a>上手</h1><p>　　做好准备工作就可以开始安装SchildiChat了。由于SchildiChat分为安卓端和桌面&#x2F;网页端两种UI，故分开介绍。</p>
+<p>　　在FluffyChat事先注册好的MXID可以拿出来使用了，格式记为@username:domain.name。</p>
+<h2 id="安卓"><a href="#安卓" class="headerlink" title="安卓"></a>安卓</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>　　打开事先准备好的F-Droid，搜索<a target="_blank" rel="noopener" href="https://schildi.chat/android/">SchildiChat</a>和<a target="_blank" rel="noopener" href="https://f-droid.org/zh_Hans/packages/io.heckel.ntfy/">ntfy</a>，下载并安装，打开。</p>
+<h3 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h3><p>　　点击“开始吧”之后会有三种登录方式供选择，点击中间的“自定义服务器”(如果决定使用matrix.org请点击最下方按钮)。填入MXID中domain.name部分。</p>
+<p>　　一般情况下会出现“注册”和“登录”按钮。点击“登录”，填入MXID中username部分，输入密码，就可以登录了。只有一个“单点登录”按钮时，点击并按照指示登录即可。</p>
+<p>　　FluffyChat注册失败，或使用matrix.org作为homeserver的同学可以点击注册按钮。对于非matrix.org的使用者，如果在Schildi注册时同样遇到reCaptha加载失败的问题，考虑以下备选方案: 1.通过网络代理等方式更改ip至其他地区再尝试注册，只要能通过reCaptha即可，之后即便使用原生ip也可以正常使用。2.将homeserver改为mozilla.org登录。</p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>　　进入之后不要着急开始聊天</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>MtxZhinan
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://mtxzhinan.github.io/20220926094430cl8k58end0000xksh6j3e3m7h/" title="SchildiChat使用指南">https://mtxzhinan.github.io/20220926094430cl8k58end0000xksh6j3e3m7h/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/20220910095029cl8k58epe0001xksh1m1pdecx/" rel="prev" title="Matrix客户端使用指南">
+                  <i class="fa fa-chevron-left"></i> Matrix客户端使用指南
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">MtxZhinan</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script><script src="/js/codeblock-fold.js"></script>
+
+  
+
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.8/pdfobject.min.js","integrity":"sha256-tu9j5pBilBQrWSDePOOajCUdz6hWsid/lBNzK4KgEPM="},"url":"/lib/pdf/web/viewer.html"}</script>
+  <script src="/js/third-party/tags/pdf.js"></script>
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>
