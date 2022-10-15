@@ -191,7 +191,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-09-28 23:18:13" itemprop="dateModified" datetime="2022-09-28T23:18:13+08:00">2022-09-28</time>
+      <time title="修改时间：2022-10-15 17:17:03" itemprop="dateModified" datetime="2022-10-15T17:17:03+08:00">2022-10-15</time>
     </span>
 
   
@@ -204,7 +204,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>　　iOS用户和想要粗略了解Matrix的同学请阅读<a href="https://mtxzhinan.github.io/3d1c6a00f08c/">Matrix客户端使用指南</a>。</p>
+        <p>　　iOS用户和想要粗略了解Matrix的同学请阅读<a href="https://mtxzhinan.github.io/20220910095029/">Matrix客户端使用指南</a>。</p>
 <p>　　<a target="_blank" rel="noopener" href="https://schildi.chat/">SchildiChat</a>是知名Matrix客户端<a target="_blank" rel="noopener" href="https://element.io/">Element</a>的衍生版本。虽然图标和UI比Element丑陋，却拥有比Element更加简便的登录方式和更丰富的功能。SchildiChat和Element一样有多个平台的客户端以及网页端(SchildiChat暂时没有iOS端 😢)。这篇文章将教会你从注册到使用快速上手SchildiChat。</p>
 <img data-src="/20220926094430/94f3fc1202266b7a2f0f8615097e091a54a41e60.svg" class="" title="外形就像一只伸出尾巴的乌龟，可能是因为太丑，把头藏起来了">
 
@@ -214,16 +214,16 @@
 <p>　　众所周知，Matrix是一个协议，服务的供应商取决于注册账号时填写的homeserver。一般情况下大家会选择matrix.org作为homeserver。由于部分地区并没有能力直接访问matrix.org，且Matrix组织也呼吁不要把账号都放在同一个供应商里，因此你需要找到一个便于自己访问的homeserver并在上面注册账号。</p>
 <p>　　<a target="_blank" rel="noopener" href="https://joinmatrix.org/servers">joinmatrix.org</a>和<a target="_blank" rel="noopener" href="https://wiki.asra.gr/en:public_servers">asra.gr’s list</a>列出了开放注册的homeserver。建议先挑选一个地理位置离自己较近的，然后在<a target="_blank" rel="noopener" href="https://www.itdog.cn/tcping/">ITDOG</a>输入homeserver域名并观察居住地服务器访问该域名的延迟(&lt;&#x3D;200ms的线路比较顺畅)。如果捉摸不定，这里也有一个清单可供参考。</p>
 <ul>
-<li><p>居住地在亚太、美洲: 🇯🇵comm.cx 🇺🇸mozilla.org 🇺🇸community.rs</p>
+<li><p>居住地在亚太地区、美洲: 🇯🇵comm.cx 🇺🇸mozilla.org 🇺🇸community.rs</p>
 </li>
-<li><p>居住地在中西亚、欧洲、非洲: 🇷🇺sibnsk.net 🇩🇪envs.net 🇩🇪yatrix.org</p>
+<li><p>居住地在亚洲中西部、欧洲、非洲: 🇷🇺sibnsk.net 🇩🇪envs.net 🇩🇪yatrix.org</p>
 </li>
 </ul>
 <p>　　如果能够<a target="_blank" rel="noopener" href="https://matrix-org.github.io/synapse">自行搭建homeserver</a>是最好的，使用质量和数据安全都能够得到保证。</p>
 <h2 id="Matrix账号"><a href="#Matrix账号" class="headerlink" title="Matrix账号"></a>Matrix账号</h2><p>(能够正常访问<a target="_blank" rel="noopener" href="https://google.com/">Google</a>的同学可以跳过该步骤，直接使用Schildi注册账号)</p>
 <p>　　部分homeserver在注册时会弹出reCaptha验证，由于Element&#x2F;Schildi转发reCaptha页面会出错，导致不能正常访问Google的用户也无法在Schildi通过reCaptha验证。</p>
 <p>　　<a target="_blank" rel="noopener" href="https://fluffychat.im/">FluffyChat</a>会通过浏览器打开homeserver提供的reCaptha，不会出现错误。因此我们可以通过FluffyChat的网页端注册一个账号，再通过SchildiChat登录。如果reCaptha仍无法加载，再通过Schildi注册也无妨。</p>
-<p>　　打开<a target="_blank" rel="noopener" href="https://fluffychat.im/web/#/home">FluffyChat的网页端</a>(或<a href="%5Bhttps://fluffychat.im%5D(https://fluffychat.im)">通过官网下载客户端</a>)，将homeserver一栏(默认是matrix.org)替换成你选好的homeserver的域名。点击”Connect”，填写用户名注册。</p>
+<p>　　打开<a target="_blank" rel="noopener" href="https://fluffychat.im/web/#/home">FluffyChat的网页端</a>(或<a href="%5Bhttps://fluffychat.im%5D(https://fluffychat.im)">通过官网下载客户端</a>)，将homeserver一栏(默认是matrix.org)替换成<a href="#Homeserver">你的homeserver域名</a>。点击”Connect”，填写用户名注册。</p>
 <p>　　注册成功后你会得到一个MXID，记格式为@username:homeserver.domain，username是注册时填写的用户名，homeserver.domain是你的账号所在homeserver的域名。记牢MXID和密码就可以无阻碍地登录Schildi了🎉。</p>
 <h2 id="F-Droid应用管理器"><a href="#F-Droid应用管理器" class="headerlink" title="F-Droid应用管理器"></a>F-Droid应用管理器</h2><p>(没有打算在安卓&#x2F;鸿蒙设备使用SchildiChat的同学请忽略该步骤)</p>
 <p>　　<a target="_blank" rel="noopener" href="https://f-droid.org/about/">F-Droid</a>是安卓平台的一款功能强大的开源软件管理器。可以通过添加各种软件仓库来实现快速下载和更新各类软件。F-Droid将用于更新Schildi和消息推送器ntfy。</p>
@@ -238,7 +238,7 @@
 <h1 id="上手"><a href="#上手" class="headerlink" title="上手"></a>上手</h1><p>　　拿出在FluffyChat事先注册好的MXID，格式记为@username:domain.name。</p>
 <p>SchildiChat有两种UI，分为<a href="#%E5%AE%89%E5%8D%93">安卓端</a>和<a href="#%E6%A1%8C%E9%9D%A2-x2F-%E7%BD%91%E9%A1%B5">桌面&#x2F;网页端</a>。</p>
 <h2 id="安卓"><a href="#安卓" class="headerlink" title="安卓"></a>安卓</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>　　打开事先准备好的F-Droid，搜索<a target="_blank" rel="noopener" href="https://schildi.chat/android/">SchildiChat</a>，下载并安装。</p>
-<h3 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h3><p>　　点击“开始吧”之后会有三种登录方式供选择，点击中间的“自定义服务器”(如果决定使用matrix.org请点击最下方按钮)。填入MXID中domain.name部分。</p>
+<h3 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h3><p>　　点击“开始吧”之后会有三种登录方式供选择，点击中间的“自定义服务器”。填入MXID中domain.name部分。</p>
 <img data-src="/20220926094430/ab41d5b9aa47972d43f9558132e3a9d0159217a1.jpg" class="" title="点击“自定义服务器”">
 
 <img data-src="/20220926094430/94959b623416a3f6f9058250bf46a415143ee0d3.jpg" class="" title="输入事先注册时所在的homeserver Url.jpg">
@@ -250,7 +250,7 @@
 
 <p>　　FluffyChat注册失败，或使用matrix.org作为homeserver的同学可以点击注册按钮注册账号。对于非matrix.org的使用者，如果在Schildi同样遇到reCaptha加载失败的问题，考虑以下备选方案: 1.通过网络代理等方式更改ip至其他地区，通过reCaptha之后再切换回正常的ip，只要homeserver能够直接访问，今后都可以正常登录和使用。2.将homeserver改为mozilla.org登录。</p>
 <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>　　登录成功时会弹窗选择后台同步方式，选择“ntfy”即可。如果没有弹窗，打开ntfy，再将Schildi的通知方式配置为ntfy(首页左上角三条横杠-&gt;设置-&gt;通知-&gt;通知方式)。打开ntfy，检查订阅条目是否增加，如果弹出关闭电池优化的请求，点击同意并在弹出的设置页面找到ntfy条目关闭电池优化。</p>
-<img data-src="/20220926094430/f351cdc7ad27a27be077339e7edf6e6c50fe8fa8.jpg" class="" title="如果订阅成功，ntfy会多出橙色下划线的描述">
+<img data-src="/20220926094430/b9d84d94aad4f0c395863e1a16ffc98f026ab18e.jpg" class="" title="SchildiChat在ntfy的描述如橙色下划线所示">
 
 <p>　　点击首页左上角三条横杠打开设置，参考下列图片和建议，调整自己的客户端。</p>
 <img data-src="/20220926094430/24a823bca29a9be2a27479a6ad35eaacca250d68.jpg" class="" title="通用设置，用于修改账户信息">
@@ -316,13 +316,13 @@
 <img data-src="/20220926094430/c3f4c30cb84818c1259c5c751fd4c5f00365c12e.png" class="" title="高级忽略设置(需在实验性选项中开启)">
 
 <p>　　接下来就可以愉快地加入聊天室了🎉。</p>
-<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="通过外部链接加入聊天室"><a href="#通过外部链接加入聊天室" class="headerlink" title="通过外部链接加入聊天室"></a>通过外部链接加入聊天室</h2><p>外部链接的格式是<code>https://matrix.to/#/#room(@username/!id):homeserver.name</code>，<code>#/@/!</code>及之后的内容即为聊天室地址&#x2F;MXID&#x2F;ROOMID。打开外部链接时会弹出选择客户端的提示，选择Element并继续即可。</p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="通过外部链接加入聊天室"><a href="#通过外部链接加入聊天室" class="headerlink" title="通过外部链接加入聊天室"></a>通过外部链接加入聊天室</h2><p>外部链接的格式是<code>https://matrix.to/#/#room(@username/!id):homeserver.name</code>，<code>#/@/!</code>及之后的内容即为聊天室地址&#x2F;MXID&#x2F;ROOMID。打开外部链接时会弹出选择客户端的提示，选择Element并继续即可打开Schildi。</p>
 <img data-src="/20220926094430/67e77d64bf38f64b8a1cc901ca504d7e49605a43.png" class="" title="选择界面一览">
 
 <img data-src="/20220926094430/a28e250ac91d12d772b21885e6528aa81c33a71d.png" class="" title="如果安装了多个Element&#x2F;SchildiChat，则需指定应用(安卓&#x2F;iOS端会弹出应用选择框)">
 
 <h1 id="推荐的聊天室"><a href="#推荐的聊天室" class="headerlink" title="推荐的聊天室"></a>推荐的聊天室</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://matrix.to/#/#fujianlongface:comm.cx">#fujianlongface:comm.cx</a></li>
+<li><a target="_blank" rel="noopener" href="https://matrix.to/#/#zg5:matrix.org">#zg5:matrix.org</a></li>
 </ul>
 <h1 id="参考文献-待补充"><a href="#参考文献-待补充" class="headerlink" title="参考文献(待补充)"></a>参考文献(待补充)</h1>
     </div>
